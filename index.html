@@ -1,0 +1,14 @@
+<!-- PÁGINA LIMPA, APENAS COM O RESULTADO DO RASTREIO -->
+<h2>Limpo</h2>
+<form action='https://www2.correios.com.br/sistemas/rastreamento/resultado_semcontent.cfm' method='post'target='_blank'>
+   <input maxlength='13' name='objetos' oninput='this.value = this.value.toUpperCase()' placeholder="código" pattern='[A-Za-z]{2}[0-9]{9}[A-Za-z]{2}' required='true' title='O padrão do código de rastreio dos correios são: duas letras no inicio, nove números e código do pais no no final, exemplo: AB123456789BR.' type='text'/>
+   <button type="submit">Submit</button>
+</form>
+<!-- PÁGINA COMPLETA COM SITE DOS CORREIOS -->
+<h2>Completo</h2>
+<form action="https://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm" method="post" target='_blank'>
+   <input maxlength='13' name='objetos' oninput='this.value = this.value.toUpperCase()' placeholder="código" pattern='[A-Za-z]{2}[0-9]{9}[A-Za-z]{2}' required='true' title='O padrão do código de rastreio dos correios são: duas letras no inicio, nove números e código do pais no no final, exemplo: AB123456789BR.' type='text'/>
+   <input type="hidden" name="acao" value="track" />
+   <button type="submit">Submit</button>
+</form>
+<!-- MADE BY MTHS1901.COM -->
